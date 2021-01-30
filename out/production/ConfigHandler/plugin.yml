@@ -1,0 +1,14 @@
+main: com.nur.confighandler.Main
+name: ConfigHandler
+version: 1.0
+author: nur
+description: Handles configs
+commands:
+  configreload:
+    description: Reloads config(s)
+    usage: /<command> [configname]
+    permission: nur.configreload
+permissions:
+  nur.configreload:
+    description: Allows usage of /configreload
+    default: op

@@ -1,0 +1,33 @@
+main: com.nur.chathandler.Main
+name: ChatHandler
+version: 1.0
+author: nur
+description: Chat handler
+depend: [Essentials, ConfigHandler]
+commands:
+  color:
+    description: Choose your chat and name color
+    aliases: [colors, colour, colours]
+    usage: /<command>
+    permission: saico.color
+  setnamecolorother:
+    description: Set the name color of another player
+    usage: /<command> [player] [name color]
+    permission: saico.setnamecolorother
+  setchatcolorother:
+    description: Set the chat color of another player
+    usage: /<command> [player] [chat color]
+    permission: saico.setchatcolorother
+permissions:
+  saico.color:
+    description: Allows usage of /color
+    default: true
+  saico.setnamecolorother:
+    description: Allows usage of /setnamecolorother
+    default: op
+  saico.setchatcolorother:
+    description: Allows usage of /setchatcolorother
+    default: op
+  saico.chat.star:
+    description: Gives star prefix in display name
+    default: false
